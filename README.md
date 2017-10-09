@@ -1,59 +1,23 @@
+GettingAndCleaningData
+Getting and Cleaning Data Course Project
+Purpose:
 
+The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis.
 
-subject_train -									stores data from the file 'subject_train.txt'
+    A tidy data set.
+    A link to a Github repository with your script for performing the analysis.
+    A code book that describes the variables, the data, and any transformations or work that you performed to clean up the data called CodeBook.md.
+    You should also include a README.md in the repo with your scripts. This repo explains how all of the scripts work and how they are connected.
 
-x_train		-								stores data from the file 'x_train.txt'
+Assignment Requirements:
 
-y_train		-								stores data from the file 'y_train.txt'
+    Merges the training and the test sets to create one data set.
+    Extracts only the measurements on the mean and standard deviation for each measurement.
+    Uses descriptive activity names to name the activities in the data set
+    Appropriately labels the data set with descriptive variable names.
+    From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-acc_xtrain	-								stores data from the file 'body_acc_x_train.txt'
+Analysis
 
-acc_ytrain	-								stores data from the file 'body_acc_y_train.txt'
+For this project, a series of data sets were imported from the UCI Human Activity Recognition Using Smartphones Data Set for analysis. The files for both the data sets and it's column names were combined to create one dataframe containing the data for the test and train subjects performing various activities. Using the activities data set, the activity names were also added to the dataframe. Once that dataframe was created, the mean and standard deviation of the measurements from sensor signals using the devices' accelerometer was extracted. Using that information, the run_analysis.R file will group the data by the subject and activities they performed and the averages of each of the measurements are derived. '
 
-acc_ztrain	-								stores data from the file 'body_acc_z_train.txt'
-
-gyro_xtrain	-								stores data from the file 'gyro_acc_x_train.txt'
-
-gyro_ytrain	-								stores data from the file 'gyro_acc_y_train.txt'
-
-gyro_ztrain	-								stores data from the file 'gyro_acc_z_train.txt'
-
-totalacc_xtrain	-								stores data from the file 'total_acc_x_train.txt'
-
-totalacc_ytrain	-								stores data from the file 'total_acc_y_train.txt'
-
-totalacc_ztrain	-								stores data from the file 'total_acc_z_train.txt'
-
-subject_test	-								stores data from the file 'subject_test.txt'
-
-x_test		-								stores data from the file 'x_test.txt'
-
-y_test		-								stores data from the file 'y_test.txt'
-
-acc_xtest	-								stores data from the file 'body_acc_x_test.txt'
-
-acc_ytest	-								stores data from the file 'body_acc_y_test.txt'
-
-acc_ztest	-								stores data from the file 'body_acc_z_test.txt'
-
-gyro_xtest	-								stores data from the file 'gyro_acc_x_test.txt'
-
-gyro_ytest	-								stores data from the file 'gyro_acc_y_test.txt'
-
-gyro_ztest	-								stores data from the file 'gyro_acc_z_test.txt'
-
-totalacc_xtest	-								stores data from the file 'total_acc_x_test.txt'
-
-totalacc_ytest	-								stores data from the file 'total_acc_y_test.txt'
-
-totalacc_ztest	-								stores data from the file 'total_acc_z_test.txt'
-
-merged_test	-								merges and stores all the files from the test folder
- 
-merged_train	-								merges and stores all the files from the train folder
-
-mergedData	-								merges the merged_test and merged_train data frames
-
-col_means	-								calculates the means of all columns in the mergedData data frame
-
-col_standard_deviation	-							calculates the standarad deviation of all columns in mergedData 										data frame
